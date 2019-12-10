@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Freedom Dog Rescue</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ivi5djf.css">
+</head>
+<body>
+  <header role="banner" class="masthead grid grid-xs-bottom grid-m-center grid-m-middle wrapper gutter-1-2 pad-b-1-2 pad-t-1-2 push-2 gutter wrapper">
+    <div class="unit xs-1-4 m-0">
+      <a class="logo-sm logo-hover" href="index.html">
+        <img class="img-flex" src="images/freedom-logo-sq.svg" alt="Freedom Dog Rescue">
+      </a>
+    </div>
+
+    <div class="unit xs-0 m-1-4">
+      <a class="logo logo-hover" href="index.html">
+        <img class="img-flex" src="images/freedom-logo.svg" alt="Freedom Dog Rescue">
+      </a>
+    </div>
+
+    <nav role="nav" class="unit xs-0 m-3-4 text-right">
+      <ul class="list-group-inline push-1-4 blue">
+        <li><a aria-label="Learn more about adoption" href="#">Adoption</a></li>
+        <li><a aria-label="Learn more about foster" href="#">Foster</a></li>
+        <li><a aria-label="Learn more about volunterr" href="#">Volunteer</a></li>
+        <li><a aria-label="Learn more about freedom dog rescue" href="#">About</a></li>
+        <li><a aria-label="Learn more about surrenders" href="#">Surrender</a></li>
+      </ul>
+    </nav>
+
+    <div class="unit xs-3-4 m-0 text-right relative">
+      <input type="checkbox" class="nav-check absolute" id="nav-check">
+      <label class="nav-label" for="nav-check">
+        <img class="nav-open" src="images/menu-open.svg" alt="open navigation">
+        <img class="nav-close" src="images/menu-close.svg" alt="close navigation">
+      </label>
+      <nav role="nav" class="nav">
+        <ul class="list-group push-1-4">
+          <li><a aria-label="Learn more about adoption" href="#">Adoption</a></li>
+          <li><a aria-label="Learn more about foster" href="#">Foster</a></li>
+          <li><a aria-label="Learn more about volunterr" href="#">Volunteer</a></li>
+          <li><a aria-label="Learn more about freedom dog rescue" href="#">About</a></li>
+          <li><a aria-label="Learn more about surrenders" href="#">Surrender</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <form class="grid gutter push-2 wrapper card-box" action="index.html" method="post">
+    <h2 class="orange pad-t unit xs-1 text-center">Application Form</h2>
+    <p class="red unit xs-1 text-left milli">All fields required*</p>
+    <div class="full-name unit xs-1 push-2">
+      <h3 class="blue push-none gutter-l-2">Full Name</h3>
+      <div class="grid">
+        <div class="unit xs-1 m-1-2 push gutter">
+          <input class="input" type="text" id="first-name">
+          <label for="first-name">First Name</label>
+        </div>
+        <div class="unit xs-1 m-1-2 push gutter">
+          <input class="input" type="text" id="last-name"s>
+          <label for="last-name">Last Name</label>
+        </div>
+      </div>
+    </div>
+
+    <div class=" address unit xs-1 push-2">
+      <h3 class="blue push-none gutter-l-2">Address</h3>
+      <div class="grid">
+
+        <div class="unit xs-1 m-1-2 push gutter">
+          <input class="input" type="text" id="street-1" value="">
+          <label for="street-1">Street Address</label>
+        </div>
+
+        <div class="unit xs-1 m-1-2 push gutter">
+          <input class="input" type="text" id="street-2" value="">
+          <label for="street-2">Street Address Line 2</label>
+        </div>
+
+        <div class="unit xs-1 m-1-2 push gutter">
+
+          <div class="grid">
+            <div class="unit xs-1-2 push gutter-r">
+              <input class="input" type="text" id="city" value="">
+              <label for="city">City</label>
+            </div>
+            <div class="unit xs-1-2 push gutter-l">
+              <input class="input" type="text" id="province" value="">
+              <label for="province">Province</label>
+            </div>
+            <div class="unit xs-1-2 push gutter-r">
+              <input class="input" type="text" id="postal" value="">
+              <label for="postal">Postal Code</label>
+            </div>
+            <div class="unit xs-1-2 push gutter-l">
+              <select class="select" type="text" id="country" value="">
+                <option value="">Canada</option>
+                <option value="">United States</option>
+                </select>
+              <label for="country">Country</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="unit xs-1 m-1-2 push gutter">
+            <p class="blue bold push-1-4">Do you?</p>
+            <input type="radio" name="home-type" id="own">
+            <label for="own">Own</label>
+            <input type="radio" name="home-type" id="rent">
+            <label for="rent">Rent</label>
+            <input type="radio" name="home-type" id="parents">
+            <label for="parents">Live with parents</label>
+            <input type="radio" name="home-type" id="other">
+            <label for="other">Other</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="unit xs-1">
+      <h3 class="blue push-none gutter-l-2">Dog of Interest</h3>
+      <div class="grid">
+
+        <div class="unit xs-1 m-1-2 push gutter">
+          <input class="input" type="text" id="dogname" value="">
+          <label for="dogname">Dog name</label>
+        </div>
+
+        <div class="unit xs-1 m-1-2 push gutter">
+            <textarea id="why" placeholder="Please explain why you would be a good fit for the dog above."></textarea>
+            <label for="why">Please Explain</label>
+        </div>
+      </div
+    </div>
+
+    <div class="unit xs-1 text-center push">
+      <button aria-label="Click here to submit your completed application form" class="btn btn-r text-center" type="submit" name="button"> Submit</button>
+    </div>
+  </div>
+  </form>
+
+  <footer  role="contentinfo" class="blue-bg pad-b">
+    <div class="grid wrapper pad-t-1-2 gutter grid-bottom">
+
+      <div class="unit xs-1-2 m-1-4 l-1-4 push">
+        <a href="index.html"><img src="images/white-logo.svg" alt=""></a>
+      </div>
+
+      <div class="unit xs-1">
+        <div class="grid xs-1">
+          <div class="unit xs-1 s-1-2 m-1-4">
+            <div class="grid">
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/twit.svg" alt="">
+                  </i>
+                </a>
+              </div>
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/face.svg" alt="">
+                  </i>
+                </a>
+              </div>
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/insta.svg" alt="">
+                  </i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="unit xs-1 s-1-2 m-3-4">
+            <p class="text-right white push-none">
+              613-200-4141
+            </p>
+            <p class="white text-right push-none">
+              freedomdogrescue@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>

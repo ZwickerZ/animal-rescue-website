@@ -4,135 +4,257 @@
   <meta charset="utf-8">
   <title>Freedom Dog Rescue</title>
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/ivi5djf.css">
 </head>
-<body>
-  <header>
-    <h1 class="logo">
-      <img class="img" src="images/freedom-logo-sq.svg" alt="">
-      <img class="display-none" src="images/" alt="">
-    </h1>
 
-    <ul>
-      <li><a href="">Adoption</a></li>
-      <li><a href="">Foster</a></li>
-      <li><a href="">Volunteer</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Surrender</a></li>
+<header role="banner" class="masthead grid grid-xs-bottom grid-m-center grid-m-middle wrapper gutter-1-2 pad-b-1-2 pad-t-1-2 push-2 gutter wrapper">
+  <div class="unit xs-1-4 m-0">
+    <a class="logo-sm logo-hover" href="index.html">
+      <img class="img-flex" src="images/freedom-logo-sq.svg" alt="Freedom Dog Rescue">
+    </a>
+  </div>
+
+  <div class="unit xs-0 m-1-4">
+    <a class="logo logo-hover" href="index.html">
+      <img class="img-flex" src="images/freedom-logo.svg" alt="Freedom Dog Rescue">
+    </a>
+  </div>
+
+  <nav class="unit xs-0 m-3-4 text-right">
+    <ul class="list-group-inline push-1-4 blue">
+      <li><a href="#">Adoption</a></li>
+      <li><a href="#">Foster</a></li>
+      <li><a href="#">Volunteer</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Surrender</a></li>
     </ul>
-  </header>
+  </nav>
 
-<section class="banner">
-  <h2>Save.</h2>
-  <h2>Rescue.</h2>
-  <h2>Find</h2>
-  <p>We are dedicated to rescuing homeless, abandoned and sheltered dogs. Taking in desperate owner surrenders when they can no longer care for them.</p>
-
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-</section>
-
-<section class="rescue-here">
-  <div class="btn-box">
-    <div class="">
-      <h4>Looking to rescue a dog</h4>
-      <p>Fill out the application form below</p>
-      <a class="btn btn-ghost" href="#">Application form</a>
-    </div>
-    <div class="appli-icon">
-      <img src="images" alt="">
-    </div>
+  <div class="unit xs-3-4 m-0 text-right relative">
+    <input type="checkbox" class="nav-check absolute" id="nav-check">
+    <label class="nav-label" for="nav-check">
+      <img class="nav-open" src="images/menu-open.svg" alt="open navigation">
+      <img class="nav-close" src="images/menu-close.svg" alt="close navigation">
+    </label>
+    <nav class="nav">
+      <ul class="list-group push-1-4">
+        <li><a href="#">Adoption</a></li>
+        <li><a href="#">Foster</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Surrender</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <p>Need to surrender a dog?</p>
-  <a href="#">Click here</a>
-</section>
+<body class="">
 
-<section class="recent-rescues">
-  <h3>Most Recent Rescues</h3>
 
- <!--  **********DOG CARD ONE********** -->
-  <div class="dog-card male">
-    <div class="pic-name">
+  <section class="banner relative push-2 gutter wrapper pad-t-2">
+    <div class="push">
+      <h2 class="zetta blue black push-0 banner-inner">
+        <span>Save.</span>
+        <br>
+        <span>Rescue.</span>
+        <br>
+        <span>Find.</span>
+      </h2>
+    </div>
 
-      <img src="images/" alt="">
+    <!--<img class="absolute blocks" src="images/3-blocks.svg" alt="">-->
 
-      <div class="dog-name">
-        <p>Bob</p>
-        <p>Corgie Mix</p>
+    <p class="max-p max-length push-2">We are <span class="bold orange">dedicated</span> to rescuing homeless, abandoned and sheltered dogs. Taking in desperate owner surrenders when they can no longer care for them.</p>
+
+  </section>
+
+  <section class="rescue-here text-center push-2 max-length gutter wrapper">
+    <div class="btn-box">
+      <div class="rescue-box card-box island-1-2">
+        <h4 class="pad-b-none peta">Looking to rescue a dog</h4>
+        <p>Fill out the application form below</p>
+        <a class="btn mega btn-new btn-o" href="app-form.html">Application form</a>
       </div>
-
-      <div class="m-f-icon">
-          <img src="images/" alt="">
+      <div class="appli-icon">
+        <img src="images" alt="">
       </div>
     </div>
 
-    <div class="dogicons">
-      <div class="">
-        <img src="images/" alt="">
-        <p>Years Old</p>
+    <p class="push-none">Need to surrender a dog?</p>
+    <a class="btn btn-new btn-r mega"href="#">Click here</a>
+  </section>
+
+  <section class="recent-rescues grid push-2 gutter wrapper">
+    <h3 class="zetta header-l-h blue unit xs-1 text-center">Most Recent Rescues</h3>
+
+    <!--  **********DOG CARD ONE********** -->
+    <div class="dog-card male unit xs-1 m-1-2 gutter push" href="#">
+      <div class="pic-name card-box island relative push-1-4">
+
+        <img class="img-flex hs-img" src="images/dog-bob-hs.jpg" alt="bob. a male corgie mix">
+
+        <div class="dog-name text-center">
+          <p class="giga bold push-none">Bob</p>
+          <p class="push-none">Corgie Mix</p>
+        </div>
+
+        <div class="m-f-icon absolute crop">
+          <img class="icon i-64" src="images/male-icon.svg" alt="">
+        </div>
       </div>
-      <div class="">
-        <img src="images/" alt="">
-        <p>Cat safe</p>
+
+      <div class="dogicons unit xs-1 push-1-2">
+
+        <div class="grid gutter">
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/7-yo-icon.svg" alt="">
+            </i>
+            <p>Years Old</p>
+          </div>
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/cat-safe-icon.svg" alt="">
+            </i>
+            <p>Cat safe</p>
+          </div>
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/house-train-icon.svg" alt="">
+            </i>
+            <p>House trained</p>
+          </div>
+        </div>
+      </div> <!-- END OF DOG ICONS-->
+
+      <div class="unit xs-1">
+        <p class="push-1-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+        <a class="btn btn-new btn-o" href="bob.html">Learn more about Bob</a>
       </div>
-      <div class="">
-        <img src="images/" alt="">
-        <p>House trained</p>
+
+    </div>
+
+    <!--  **********DOG CARD TWO********** -->
+    <div class="dog-card female unit [ xs-1 m-1-2 ] gutter push" href="#">
+      <div class="pic-name card-box island relative push-1-4">
+
+        <img class="img-flex hs-img" src="images/sasha-dog-hs.jpg" alt="Sasha. a female husky mix">
+
+        <div class="dog-name text-center">
+          <p class="giga bold push-none">Sasha</p>
+          <p class="push-none" >Husky Mix</p>
+        </div>
+
+        <div class="m-f-icon absolute crop">
+          <img class="icon i-64" src="images/female-icon.svg" alt="">
+        </div>
+      </div>
+
+      <div class="dogicons unit xs-1 push-1-2">
+
+        <div class="grid gutter">
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/7-yo-icon.svg" alt="">
+            </i>
+            <p>Years Old</p>
+          </div>
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/cat-safe-icon.svg" alt="">
+            </i>
+            <p>Cat safe</p>
+          </div>
+
+          <div class="unit xs-1-3 text-center">
+            <i class="icon i-64">
+              <img src="images/house-train-icon.svg" alt="">
+            </i>
+            <p>House trained</p>
+          </div>
+        </div>
+      </div> <!-- END OF DOG ICONS-->
+
+      <div class="unit xs-1">
+        <p class="push-1-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+        <a class="btn btn-new btn-o" href="#">Learn more about Sasha</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="how gutter wrapper">
+    <h3 class="zetta text-center blue header-l-h black">How we do we do it?</h3>
+    <p>We work with committed volunteers, foster homes, local veterinarians, and trainers. We are able to rescue dogs in need and provide them with loving temporary care until a well-matched carefully screened "furever home" is found.</p>
+    <p>Our fosters and volunteers are the heart and soul of Freedom Dog Rescue, and the reason we are able to successfully rescue and adopt out so many deserving dogs. We truly are like a family of friends and in some cases we actually are family and it’s just so amazing that we can share our passion together and have so much fun doing it.</p>
+  </section>
+
+  <section class="more-qs grid text-center card-box island push-2 gutter wrapper m-width">
+    <h4 class="text-center unit xs-1 light push">Still have more questions?</h4>
+    <div class="push-1-2 unit xs-1 m-1-2">
+      <a class="btn btn-new btn-r " href="#">Contact us</a>
+    </div>
+    <div class="push-1-2 unit xs-1 m-1-2">
+      <a class="btn btn-new btn-o" href="#">Learn more</a>
+    </div>
+  </section>
+  </body>
+
+  <footer role="contentinfo" class="blue-bg pad-b">
+    <div class="grid wrapper pad-t-1-2 gutter grid-bottom">
+
+      <div class="unit xs-1-2 m-1-4 l-1-4 push">
+        <a href="index.html"><img src="images/white-logo.svg" alt="freedom dog rescue logo"></a>
+      </div>
+
+      <div class="unit xs-1">
+        <div class="grid xs-1">
+          <div class="unit xs-1 s-1-2 m-1-4">
+            <div class="grid">
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/twit.svg" alt="">
+                  </i>
+                </a>
+              </div>
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/face.svg" alt="">
+                  </i>
+                </a>
+              </div>
+              <div class="unit xs-1-3 text-left">
+                <a href="#">
+                  <i class="icon i-32">
+                    <img src="images/insta.svg" alt="">
+                  </i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="unit xs-1 s-1-2 m-3-4">
+            <p class="text-right white push-none">
+              613-200-4141
+            </p>
+            <p class="white text-right push-none">
+              freedomdogrescue@gmail.com
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-    <a href="#">Learn more about Bob</a>
-  </div>
+  </footer>
 
- <!--  **********DOG CARD TWO********** -->
- <div class="dog-card female">
-   <div class="pic-name">
-
-     <img src="images/" alt="">
-
-     <div class="dog-name">
-       <p>Sasha</p>
-       <p>Husky Mix</p>
-     </div>
-
-     <div class="m-f-icon">
-         <img src="images/" alt="">
-     </div>
-   </div>
-
-   <div class="dogicons">
-     <div class="">
-       <img src="images/" alt="">
-       <p>Years Old</p>
-     </div>
-     <div class="">
-       <img src="images/" alt="">
-       <p>Cat safe</p>
-     </div>
-     <div class="">
-       <img src="images/" alt="">
-       <p>House trained</p>
-     </div>
-   </div>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-   <a href="#">Learn more about Sasha</a>
- </div>
-</section>
-
-<section class="how">
-  <h3>How we do we do it?</h3>
-  <p>We work with committed volunteers, foster homes, local veterinarians, and trainers. We are able to rescue dogs in need and provide them with loving temporary care until a well-matched carefully screened "furever home" is found.</p>
-  <p>Our fosters and volunteers are the heart and soul of Freedom Dog Rescue, and the reason we are able to successfully rescue and adopt out so many deserving dogs. We truly are like a family of friends and in some cases we actually are family and it’s just so amazing that we can share our passion together and have so much fun doing it.</p>
-</section>
-
-<section class="more-qs">
-  <p>Still have more questions?</p>
-  <a href="#">Contact us</a>
-  <a href="#">Learn more</a>
-</section>
-</body>
-</html>
+  </html>
